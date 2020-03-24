@@ -78,70 +78,70 @@ export const base_stats: InfectedEntry[] = [
 export const current_stats: InfectedEntry[] = [
   {
     name: "Madrid",
-    value: 8921
+    value: 10575
   },
   {
     name: "La Rioja",
-    value: 564
+    value: 747
   },
   {
     name: "Andalucía",
-    value: 1515
+    value: 1961
   },
   {
     name: "Cataluña",
-    value: 4203
+    value: 7864
   },
   {
     name: "Valencia",
-    value: 1363
+    value: 1901
   },
   {
     name: "Murcia",
-    value: 240
+    value: 385
   },
   {
     name: "Extremadura",
-    value: 354
+    value: 493
   },
   {
     name: "Castilla La Mancha",
-    value: 1423
+    value: 2078
   },
   {
     name: "País Vasco",
-    value: 1725
+    value: 2421
   },
   {
     name: "Cantabria",
-    value: 215
+    value: 347
   },
   {
     name: "Asturias",
-    value: 486
+    value: 594
   },
   {
     name: "Galicia",
-    value: 739
+    value: 1208
   },
   {
     name: "Aragón",
-    value: 424
+    value: 638
   },
   {
     name: "Castilla y León",
-    value: 1466
+    value: 2055
   },
   {
     name: "Islas Canarias",
-    value: 348
+    value: 481
   },
   {
     name: "Islas Baleares",
-    value: 246
+    value: 400
   },
   {
     name: "Navarra",
-    value: 664
+    value: 886
   }
 ];
