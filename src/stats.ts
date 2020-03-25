@@ -5,7 +5,7 @@ export interface InfectedEntry {
 
 export const base_stats: InfectedEntry[] = [
   {
-    name: "Madrid",
+    name: "Comunidad de Madrid",
     value: 587
   },
   {
@@ -13,19 +13,19 @@ export const base_stats: InfectedEntry[] = [
     value: 102
   },
   {
-    name: "AndalucÃ­a",
+    name: "Andalucía",
     value: 54
   },
   {
-    name: "CataluÃ±a",
+    name: "Catalunya",
     value: 101
   },
   {
-    name: "Valencia",
+    name: "Comunidad Valenciana",
     value: 50
   },
   {
-    name: "Murcia",
+    name: "Región de Murcia",
     value: 5
   },
   {
@@ -33,11 +33,11 @@ export const base_stats: InfectedEntry[] = [
     value: 7
   },
   {
-    name: "Castilla La Mancha",
+    name: "Castilla-La Mancha",
     value: 26
   },
   {
-    name: "PaÃ­s Vasco",
+    name: "País Vasco",
     value: 148
   },
   {
@@ -53,11 +53,11 @@ export const base_stats: InfectedEntry[] = [
     value: 18
   },
   {
-    name: "AragÃ³n",
+    name: "Aragón",
     value: 32
   },
   {
-    name: "Castilla y LeÃ³n",
+    name: "Castilla y León",
     value: 40
   },
   {
@@ -77,7 +77,7 @@ export const base_stats: InfectedEntry[] = [
 
 export const current_stats: InfectedEntry[] = [
   {
-    name: "Madrid",
+    name: "Comunidad de Madrid",
     value: 10575
   },
   {
@@ -85,19 +85,19 @@ export const current_stats: InfectedEntry[] = [
     value: 747
   },
   {
-    name: "AndalucÃ­a",
+    name: "Andalucía",
     value: 1961
   },
   {
-    name: "CataluÃ±a",
+    name: "Catalunya",
     value: 7864
   },
   {
-    name: "Valencia",
+    name: "Comunidad Valenciana",
     value: 1901
   },
   {
-    name: "Murcia",
+    name: "Región de Murcia",
     value: 385
   },
   {
@@ -105,11 +105,11 @@ export const current_stats: InfectedEntry[] = [
     value: 493
   },
   {
-    name: "Castilla La Mancha",
+    name: "Castilla-La Mancha",
     value: 2078
   },
   {
-    name: "PaÃ­s Vasco",
+    name: "PaÃí Vasco",
     value: 2421
   },
   {
@@ -125,11 +125,11 @@ export const current_stats: InfectedEntry[] = [
     value: 1208
   },
   {
-    name: "AragÃ³n",
+    name: "Aragón",
     value: 638
   },
   {
-    name: "Castilla y LeÃ³n",
+    name: "Castilla y León",
     value: 2055
   },
   {

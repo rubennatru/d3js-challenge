@@ -1,16 +1,16 @@
 export const latLongCommunities = [
   {
-    name: "Madrid",
+    name: "Comunidad de Madrid",
     long: -3.70256,
     lat: 40.4165
   },
   {
-    name: "Andaluc√≠a",
+    name: "AndalucÌa",
     long: -4.5,
     lat: 37.6
   },
   {
-    name: "Valencia",
+    name: "Comunidad Valenciana",
     long: -0.37739,
     lat: 39.45975
   },
@@ -25,12 +25,12 @@ export const latLongCommunities = [
     lat: 39.16667
   },
   {
-    name: "Catalu√±a",
+    name: "Catalunya",
     long: 1.86768,
     lat: 41.82046
   },
   {
-    name: "Pa√≠s Vasco",
+    name: "PaÌs Vasco",
     long: -2.75,
     lat: 43.0
   },
@@ -50,17 +50,17 @@ export const latLongCommunities = [
     lat: 42.75508
   },
   {
-    name: "Arag√≥n",
+    name: "AragÛn",
     long: -1.0,
     lat: 41.0
   },
   {
-    name: "Castilla y Le√≥n",
+    name: "Castilla y LeÛn",
     long: -4.45,
     lat: 41.383333
   },
   {
-    name: "Castilla La Mancha",
+    name: "Castilla-La Mancha",
     long: -3.000033,
     lat: 39.500011
   },
