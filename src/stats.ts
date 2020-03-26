@@ -5,143 +5,256 @@ export interface InfectedEntry {
 
 export const base_stats: InfectedEntry[] = [
   {
-    name: "Comunidad de Madrid",
-    value: 587
+    name: "Anhui",
+    value: 150
   },
   {
-    name: "La Rioja",
+    name: "Beijing",
     value: 102
   },
   {
-    name: "Andalucía",
+    name: "Chongqing",
     value: 54
   },
   {
-    name: "Catalunya",
-    value: 101
+    name: "Fujian",
+    value: 322
   },
   {
-    name: "Comunidad Valenciana",
-    value: 50
+    name: "Gansu",
+    value: 35
   },
   {
-    name: "Región de Murcia",
+    name: "Guangdong",
     value: 5
   },
   {
-    name: "Extremadura",
+    name: "Guangxi",
     value: 7
   },
   {
-    name: "Castilla-La Mancha",
+    name: "Guizhou",
     value: 26
   },
   {
-    name: "País Vasco",
+    name: "Hainan",
     value: 148
   },
   {
-    name: "Cantabria",
+    name: "Hebei",
     value: 12
   },
   {
-    name: "Asturias",
+    name: "Heilongjiang",
     value: 10
   },
   {
-    name: "Galicia",
+    name: "Henan",
     value: 18
   },
   {
-    name: "Aragón",
-    value: 32
+    name: "Hubei",
+    value: 750
   },
   {
-    name: "Castilla y León",
+    name: "Hunan",
     value: 40
   },
   {
-    name: "Islas Canarias",
+    name: "Jiangsu",
     value: 24
   },
   {
-    name: "Islas Baleares",
+    name: "Jiangxi",
     value: 11
   },
   {
-    name: "Navarra",
+    name: "Jilin",
+    value: 13
+  },
+  {
+    name: "Liaoning",
+    value: 13
+  },
+  {
+    name: "Nei Mongol",
+    value: 13
+  },
+  {
+    name: "Ningxia Hui",
+    value: 75
+  },
+  {
+    name: "Qinghai",
+    value: 13
+  },
+  {
+    name: "Shaanxi",
+    value: 250
+  },
+  {
+    name: "Shandong",
+    value: 13
+  },
+  {
+    name: "Shanghai",
+    value: 13
+  },
+  {
+    name: "Shanxi",
+    value: 250
+  },
+  {
+    name: "Sichuan",
+    value: 13
+  },
+  {
+    name: "Tianjin",
+    value: 13
+  },
+  {
+    name: "Xinjiang Uygur",
+    value: 13
+  },
+  {
+    name: "Xizang",
+    value: 13
+  },
+  {
+    name: "Yunnan",
+    value: 13
+  },
+  {
+    name: "Zhejiang",
     value: 13
   }
+  
 ];
 
 
 export const current_stats: InfectedEntry[] = [
   {
-    name: "Comunidad de Madrid",
-    value: 10575
+    name: "Anhui",
+    value: 990
   },
   {
-    name: "La Rioja",
-    value: 747
+    name: "Beijing",
+    value: 561
   },
   {
-    name: "Andalucía",
-    value: 1961
+    name: "Chongqing",
+    value: 578
   },
   {
-    name: "Catalunya",
-    value: 7864
+    name: "Fujian",
+    value: 322
   },
   {
-    name: "Comunidad Valenciana",
-    value: 1901
+    name: "Gansu",
+    value: 136
   },
   {
-    name: "Región de Murcia",
-    value: 385
+    name: "Guangdong",
+    value: 1433
   },
   {
-    name: "Extremadura",
-    value: 493
+    name: "Guangxi",
+    value: 254
   },
   {
-    name: "Castilla-La Mancha",
-    value: 2078
+    name: "Guizhou",
+    value: 146
   },
   {
-    name: "PaÃí Vasco",
-    value: 2421
+    name: "Hainan",
+    value: 148
   },
   {
-    name: "Cantabria",
-    value: 347
+    name: "Hebei",
+    value: 319
   },
   {
-    name: "Asturias",
-    value: 594
+    name: "Heilongjiang",
+    value: 484
   },
   {
-    name: "Galicia",
-    value: 1208
+    name: "Henan",
+    value: 1274
   },
   {
-    name: "Aragón",
+    name: "Hubei",
+    value: 67801
+  },
+  {
+    name: "Hunan",
+    value: 40
+  },
+  {
+    name: "Jiangsu",
     value: 638
   },
   {
-    name: "Castilla y León",
-    value: 2055
+    name: "Jiangxi",
+    value: 936
   },
   {
-    name: "Islas Canarias",
-    value: 481
+    name: "Jilin",
+    value: 94
   },
   {
-    name: "Islas Baleares",
-    value: 400
+    name: "Liaoning",
+    value: 127
   },
   {
-    name: "Navarra",
-    value: 886
+    name: "Nei Mongol",
+    value: 77
+  },
+  {
+    name: "Ningxia Hui",
+    value: 75
+  },
+  {
+    name: "Qinghai",
+    value: 18
+  },
+  {
+    name: "Shaanxi",
+    value: 250
+  },
+  {
+    name: "Shandong",
+    value: 769
+  },
+  {
+    name: "Shanghai",
+    value: 433
+  },
+  {
+    name: "Shanxi",
+    value: 250
+  },
+  {
+    name: "Sichuan",
+    value: 547
+  },
+  {
+    name: "Tianjin",
+    value: 13
+  },
+  {
+    name: "Xinjiang Uygur",
+    value: 76
+  },
+  {
+    name: "Xizang",
+    value: 13
+  },
+  {
+    name: "Yunnan",
+    value: 176
+  },
+  {
+    name: "Zhejiang",
+    value: 1241
   }
 ];

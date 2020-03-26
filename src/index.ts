@@ -1,6 +1,6 @@
 import * as d3 from "d3";
 import * as topojson from "topojson-client";
-const spainjson = require("../data/spain.json");
+const chinajson = require("../data/china.json");
 const d3Composite = require("d3-composite-projections");
 import { latLongCommunities } from "./communities";
 
@@ -12,41 +12,44 @@ import {
 } from "./stats";
 
 
-
 var color = d3
   .scaleThreshold<number, string>()
-  .domain([0, 100, 500, 700, 1000, 1500, 2000])
+  .domain([10, 20, 50, 100, 500, 700, 1000, 1500, 2000, 3000, 5000])
   .range([
     "#e2d8e4",
     "#c6b1c9",
     "#aa8caf",
     "#8e6995",
     "#72467c",
-    "#72467c",
-    "#4c195a"
+    "#572364",
+    "#523059",
+    "#491f53",
+    "#4f3654",
+    "#2e1733",
+    "#461c50",
   ]);
 
 
 
-  const svg = d3
+const svg = d3
   .select("body")
   .append("svg")
   .attr("width", 1024)
   .attr("height", 800)
-  .attr("style", "background-color: #dfe0e0");
+  .attr("style", "background-color: #f4f4f4");
 
 
-const aProjection = d3Composite
-  .geoConicConformalSpain()
+const aProjection = d3
+  .geoMercator()
   // Let's make the map bigger to fit in our resolution
-  .scale(3300)
+  .scale(850)
   // Let's center the map
-  .translate([500, 400]);
+  .translate([-1050, 1000]);
 
 
 
 const geoPath = d3.geoPath().projection(aProjection);
-const geojson = topojson.feature(spainjson, spainjson.objects.ESP_adm1);
+const geojson = topojson.feature(chinajson, chinajson.objects.CHN_adm1);
 
 
 // Buttons 
@@ -78,7 +81,7 @@ const updateMap = (data: InfectedEntry[]) => {
     .scaleLinear()
     .domain([0, maxAffected])
     .clamp(true)
-    .range([5, 40]); // 50 pixel max radius, we could calculate it relative to width and height
+    .range([5, 30]);
   
   
   const calculateRadiusBasedOnAffectedCases = (comunidad: string) => {  
@@ -88,9 +91,9 @@ const updateMap = (data: InfectedEntry[]) => {
   
   };
 
-  const assignRegionBackgroundColor = (comunidad: string) => {
+  const assignRegionBackgroundColor = (name: string) => {
     const item = data.find(
-      item => item.name === comunidad
+      item => item.name === name
     );
   
     if (item) {
@@ -99,18 +102,19 @@ const updateMap = (data: InfectedEntry[]) => {
     return item ? color(item.value) : color(0);
   };
  
-  const drawmap = svg.selectAll("path");
 
-  drawmap
+  svg
+    .selectAll("path")
     .data(geojson["features"])
     .enter()
     .append("path")
     .attr("class", "country")
-    .style("fill", function(d: any) {
-      return assignRegionBackgroundColor(d.properties.NAME_1);
-    })
-    // data loaded from json file
-    .attr("d", geoPath as any);
+    .attr("fill", d => assignRegionBackgroundColor(d["properties"]["NAME_1"]))
+    .attr("d", geoPath as any)
+    .merge(svg.selectAll("path") as any)
+    .transition()
+    .duration(500)
+    .attr("fill", d => assignRegionBackgroundColor(d["properties"]["NAME_1"]));
 
 
   const circles = svg.selectAll("circle");
