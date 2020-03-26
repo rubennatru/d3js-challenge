@@ -14,19 +14,16 @@ import {
 
 var color = d3
   .scaleThreshold<number, string>()
-  .domain([10, 20, 50, 100, 500, 700, 1000, 1500, 2000, 3000, 5000])
+  .domain([10, 50, 100, 500, 1000, 2000, 3000, 5000])
   .range([
-    "#e2d8e4",
-    "#c6b1c9",
-    "#aa8caf",
-    "#8e6995",
-    "#72467c",
-    "#572364",
-    "#523059",
-    "#491f53",
-    "#4f3654",
-    "#2e1733",
-    "#461c50",
+    "#F8EBFF",
+    "#BBB0CE",
+    "#96A2C6",
+    "#AFA8BA",
+    "#9389A6",
+    "#8B819D",
+    "#6E647F",
+    "#4A415B"
   ]);
 
 
@@ -36,7 +33,7 @@ const svg = d3
   .append("svg")
   .attr("width", 1024)
   .attr("height", 800)
-  .attr("style", "background-color: #f4f4f4");
+  .attr("style", "background-color: #ffffff");
 
 
 const aProjection = d3
